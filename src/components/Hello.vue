@@ -5,7 +5,7 @@
         <div class="container">
           <div class="tabs is-right">
             <ul>
-              <li><a v-on:click="funcionamento()">funcionamento</a></li>
+              <li><a href="#">funcionamento</a></li>
               <li><a href="#">clientes</a></li>
               <li><a href="#">planos</a></li>
             </ul>
@@ -32,7 +32,7 @@
 
     <section class="section is-medium">
       <div class="container">
-        <h1 class="title" id="section_funcionamento">Section</h1>
+        <h1 class="title" id="sectionFuncionamento">Section</h1>
         <h2 class="subtitle">
           A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
         </h2>
@@ -68,12 +68,9 @@ export default {
           }
         });
     }
-    this.funcionamento();
   },
   methods: {
     funcionamento: function() {
-      var container = $('#section_funcionamento');
-      container.scrollTop = container.scrollHeight;
     }
   }
 }
