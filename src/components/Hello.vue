@@ -5,8 +5,8 @@
         <div class="container">
           <div class="tabs is-right">
             <ul>
-              <li><a href="#">funcionamento</a></li>
-              <li><a href="#">clientes</a></li>
+              <li><a href="#elemento">funcionamento</a></li>
+              <li><a href="#elemento1">clientes</a></li>
               <li><a href="#">planos</a></li>
             </ul>
           </div>
@@ -30,9 +30,18 @@
       </div>
     </section>
 
-    <section class="section is-medium">
+    <section class="section is-medium" id="elemento">
       <div class="container">
-        <h1 class="title" id="sectionFuncionamento">Section</h1>
+        <h1 class="title">Section</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </div>
+    </section>
+
+    <section class="section is-large" style="background: pink;" id="elemento1">
+      <div class="container">
+        <h1 class="title">Section2</h1>
         <h2 class="subtitle">
           A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
         </h2>
@@ -42,7 +51,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 export default {
   name: 'hello',
   data () {

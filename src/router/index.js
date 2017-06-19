@@ -1,10 +1,18 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import Hello from '@/components/Hello'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
+  mode: 'history',
+  scrollBehavior: function(to, from, savedPosition) {
+    if(to.hash) {
+      return { selector: to.hash }
+    } else {
+      return { x: 0, y: 0}
+    }
+  },
   routes: [
     {
       path: '/',
@@ -12,4 +20,4 @@ export default new Router({
       component: Hello
     }
   ]
-})
+});
