@@ -1,31 +1,79 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" class="ui button">awesome-vue</a></li>
-    </ul>
+    <section class="hero is-fullheight first_hero transition hidden">
+      <div class="hero-head">
+        <div class="container">
+          <div class="tabs is-right">
+            <ul>
+              <li><a v-on:click="funcionamento()">funcionamento</a></li>
+              <li><a href="#">clientes</a></li>
+              <li><a href="#">planos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-body transition hidden">
+        <div class="container has-text-centered">
+          <img src="../assets/logo.png">
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="container">
+          <div class="tabs is-centered top-menu transition hidden">
+            <ul>
+              <li><a href="https://soucriador.com/">powered by soucriador.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <div class="container">
+        <h1 class="title" id="section_funcionamento">Section</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  mounted () {
+    if ( $('.first_hero').hasClass('hidden') ) {
+      $('.first_hero')
+        .transition({
+          animation  : 'fade',
+          duration   : '1s',
+          onComplete : function() {
+            $('.top-menu')
+              .transition({
+                animation  : 'scale',
+                duration   : '700ms',
+                onComplete : function() {
+                  $('.hero-body').transition('fade', '500ms');
+                }
+              });
+          }
+        });
+    }
+    this.funcionamento();
+  },
+  methods: {
+    funcionamento: function() {
+      var container = $('#section_funcionamento');
+      container.scrollTop = container.scrollHeight;
     }
   }
 }
@@ -47,7 +95,23 @@ li {
   margin: 0 10px;
 }
 
-a {
-  color: #42b983;
+.first_hero a {
+  color: #fff !important;
+}
+
+h4 {
+  color:  #fff;
+}
+
+
+.first_hero {
+  background: -webkit-radial-gradient(50px 220px, #ffda75 18%,#ff3a49 43%,#ff3a49 50%,#e518a1 70%,#6634e1 100%);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
 }
 </style>
