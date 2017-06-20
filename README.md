@@ -1,6 +1,6 @@
-# heartlock
+# turboogram_website
 
-> A Vue.js project
+> Projeto da versão online do produto Turboogram
 
 ## Build Setup
 
