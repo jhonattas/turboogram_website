@@ -1,7 +1,7 @@
 {
-  "name": "heartlock",
+  "name": "turboogram_website",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "SPA do projeto turboogram",
   "author": "Jhonattas Henrique <jhonattas@soucriador.com>",
   "private": true,
   "scripts": {
