@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router/index'
-import semantic from 'semantic-ui/dist/semantic.js'
+
+/* semantic-ui */
+import '../node_modules/semantic-ui/dist/semantic.min.js'
+import '../node_modules/semantic-ui/dist/semantic.min.css'
 
 Vue.config.productionTip = false
 

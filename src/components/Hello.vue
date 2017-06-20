@@ -59,7 +59,11 @@ export default {
     }
   },
   mounted () {
-    if ( $('.first_hero').hasClass('hidden') ) {
+    this.showSPA();
+  },
+  methods: {
+    showSPA: function() {
+      if ( $('.first_hero').hasClass('hidden') ) {
       $('.first_hero')
         .transition({
           animation  : 'fade',
@@ -75,10 +79,7 @@ export default {
               });
           }
         });
-    }
-  },
-  methods: {
-    funcionamento: function() {
+      }
     }
   }
 }
