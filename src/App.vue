@@ -11,7 +11,6 @@ export default {
 </script>
 
 <style>
-@import url('../semantic/dist/semantic.min.css');
 @import url('../node_modules/bulma/css/bulma.css');
 @import url('../node_modules/font-awesome/css/font-awesome.min.css');
 

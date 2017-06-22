@@ -30,14 +30,7 @@
       </div>
     </section>
 
-    <section class="section is-medium" id="elemento">
-      <div class="container">
-        <h1 class="title">Section</h1>
-        <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-        </h2>
-      </div>
-    </section>
+    <FAQ></FAQ>
 
     <section class="section is-large" style="background: pink;" id="elemento1">
       <div class="container">
@@ -51,6 +44,7 @@
 </template>
 
 <script>
+import FAQ from './FAQ'
 export default {
   name: 'hello',
   data () {
@@ -81,6 +75,9 @@ export default {
         });
       }
     }
+  },
+  components: {
+    FAQ
   }
 }
 </script>
