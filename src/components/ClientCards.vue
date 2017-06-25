@@ -43,13 +43,57 @@
       </div>
     </div>
   </div>
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="../assets/clients/jhennyohana.jpg">
+      </div>
+      <div class="content">
+        <a target="_instagram" class="header" href="https://instagram.com/jhennyohana">@jhennyohana</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="../assets/clients/jhoouh.jpg">
+      </div>
+      <div class="content">
+        <a target="_instagram" class="header" href="https://instagram.com/jhoouh">@jhoouh</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="../assets/clients/fotopalhares.jpg">
+      </div>
+      <div class="content">
+        <a target="_instagram" class="header" href="https://instagram.com/fotopalhares">@fotopalhares</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="ui fluid card">
+      <div class="image">
+        <img src="../assets/clients/marmitariaforchetta.jpg">
+      </div>
+      <div class="content">
+        <a target="_instagram" class="header" href="https://instagram.com/marmitariaforchetta">@marmitariaforchetta</a>
+      </div>
+    </div>
+  </div>
 </div>
 </template>
 
 <style scoped>
 
 .ui.fluid.card {
-  max-width:  250px;
+  width:  220px;
 }
 
 </style>
