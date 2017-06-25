@@ -5,7 +5,7 @@
       <h3>Fizemos uma seção especial para que você tenha suas principais dúvidas sobre o nosso serviço adequadamente respondidas, seja sobre o funcionamento, ou questões de vínculo, conta, mensalidade e até mesmo</h3>
       <br/>
 
-      <button class="ui red button">Ver mais detalhes</button>
+      <button class="ui red button">Em breve</button>
     </div>
   </section>
 </template>

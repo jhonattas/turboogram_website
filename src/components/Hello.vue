@@ -32,18 +32,21 @@
 
     <FAQ></FAQ>
 
-    <section class="section is-large" style="background: pink;" id="elemento1">
+    <section class="section is-medium" style="background: #f1f1f1;" id="elemento1">
       <div class="container">
-        <h1 class="title">Section2</h1>
+        <h1 class="title">Destaques</h1>
         <h2 class="subtitle">
-          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+          Alguns dos clientes do nosso serviço
         </h2>
+
+        <ClientCards></ClientCards>
       </div>
     </section>
   </div>
 </template>
 
 <script>
+import ClientCards from './ClientCards'
 import FAQ from './FAQ'
 export default {
   name: 'hello',
@@ -77,6 +80,7 @@ export default {
     }
   },
   components: {
+    ClientCards,
     FAQ
   }
 }
