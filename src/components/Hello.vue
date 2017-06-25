@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <section class="hero is-fullheight first_hero transition hidden">
+    <section class="hero is-medium first_hero transition hidden">
       <div class="hero-head">
         <div class="container">
           <div class="tabs is-right">
@@ -32,15 +32,13 @@
 
     <FAQ></FAQ>
 
-    <section class="section is-medium" style="background: #f1f1f1;" id="destaques">
-      <div class="container">
+    <section class="section" style="background: #f1f1f1;" id="destaques">
         <h1 class="title">Destaques</h1>
         <h2 class="subtitle">
           Alguns dos clientes do nosso serviço
         </h2>
 
         <ClientCards></ClientCards>
-      </div>
     </section>
   </div>
 </template>
