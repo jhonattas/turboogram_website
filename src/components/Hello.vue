@@ -5,8 +5,8 @@
         <div class="container">
           <div class="tabs is-right">
             <ul>
-              <li><a href="#elemento">funcionamento</a></li>
-              <li><a href="#elemento1">clientes</a></li>
+              <li><a href="#funcionamento">funcionamento</a></li>
+              <li><a href="#destaques">clientes</a></li>
               <li><a href="#">planos</a></li>
             </ul>
           </div>
@@ -32,7 +32,7 @@
 
     <FAQ></FAQ>
 
-    <section class="section is-medium" style="background: #f1f1f1;" id="elemento1">
+    <section class="section is-medium" style="background: #f1f1f1;" id="destaques">
       <div class="container">
         <h1 class="title">Destaques</h1>
         <h2 class="subtitle">
